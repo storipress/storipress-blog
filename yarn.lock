@@ -1582,6 +1582,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storipress/blog@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@storipress/blog@workspace:."
+  dependencies:
+    "@nuxt/image-edge": 1.0.0-28008586.381b906
+    "@nuxtjs/color-mode": ^3.2.0
+    "@nuxtjs/html-validator": ^1.2.4
+    "@nuxtjs/tailwindcss": ^6.6.5
+    "@storipress/karbon": ^0.1.5
+    "@tailwindcss/typography": ^0.5.9
+    "@vueuse/nuxt": ^9.13.0
+    nuxt: ^3.3.2
+    nuxt-icon: ^0.3.3
+    nuxt-lodash: ^2.4.1
+  languageName: unknown
+  linkType: soft
+
 "@storipress/builder-component@npm:^1.3.0":
   version: 1.3.0
   resolution: "@storipress/builder-component@npm:1.3.0"
@@ -8734,23 +8751,6 @@ __metadata:
   checksum: 1a0261b551ea7846f4ef7514930263c28c67e356ab1cbbe9e69e923a081b571fb483576ea53b69e851df9e58be36ab135057d21635d8bbdb5e63c3ccc34a0419
   languageName: node
   linkType: hard
-
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
-  dependencies:
-    "@nuxt/image-edge": 1.0.0-28008586.381b906
-    "@nuxtjs/color-mode": ^3.2.0
-    "@nuxtjs/html-validator": ^1.2.4
-    "@nuxtjs/tailwindcss": ^6.6.5
-    "@storipress/karbon": ^0.1.5
-    "@tailwindcss/typography": ^0.5.9
-    "@vueuse/nuxt": ^9.13.0
-    nuxt: ^3.3.2
-    nuxt-icon: ^0.3.3
-    nuxt-lodash: ^2.4.1
-  languageName: unknown
-  linkType: soft
 
 "run-async@npm:^2.4.0":
   version: 2.4.1
