@@ -16,21 +16,23 @@ const isLoggedIn = computed(() => $paywall?.authInfo.value)
       class="grid gap-x-4 items-center grid-cols-[auto_2fr_auto] w-full m-auto px-5 max-w-[1400px] md:grid-cols-[1fr_2fr_1fr] lg:px-8"
     >
       <div class="uppercase flex gap-x-2 order-2 items-center ml-auto md:order-1 md:ml-0">
-        <!-- light/dark mode toggle button -->
-        <div
-          v-if="$colorMode.value === 'light'"
-          role="button"
-          class="flex items-center gap-1"
-          @click="$colorMode.preference = 'dark'"
-        >
-          <Icon name="material-symbols:dark-mode" />
-          <span class="leading-4 tracking-[.044rem] font-medium text-xs hidden lg:block hover:underline">Dark</span>
-        </div>
+        <template v-if="false">
+          <!-- light/dark mode toggle button -->
+          <div
+            v-if="$colorMode.value === 'light'"
+            role="button"
+            class="flex items-center gap-1"
+            @click="$colorMode.preference = 'dark'"
+          >
+            <Icon name="material-symbols:dark-mode" />
+            <span class="leading-4 tracking-[.044rem] font-medium text-xs hidden lg:block hover:underline">Dark</span>
+          </div>
 
-        <div v-else role="button" class="flex items-center gap-1" @click="$colorMode.preference = 'light'">
-          <Icon name="material-symbols:light-mode-outline" />
-          <span class="leading-4 tracking-[.044rem] font-medium text-xs hidden lg:block hover:underline">Light</span>
-        </div>
+          <div v-else role="button" class="flex items-center gap-1" @click="$colorMode.preference = 'light'">
+            <Icon name="material-symbols:light-mode-outline" />
+            <span class="leading-4 tracking-[.044rem] font-medium text-xs hidden lg:block hover:underline">Light</span>
+          </div>
+        </template>
 
         <!-- search button -->
         <div role="button" class="flex items-center gap-1" @click="isSearchDialogOpened = true">
