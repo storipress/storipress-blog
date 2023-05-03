@@ -3,6 +3,17 @@
 import { createArticleRoute, createDeskRoute, createAuthorRoute, createTagRoute } from '@storipress/karbon/helper'
 
 export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: '/favicon.png',
+        },
+      ],
+    },
+  },
   vite: {
     optimizeDeps: {
       include: ['yup', 'p-retry', 'lodash'],
@@ -23,6 +34,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     storipress: {
+      apiHost: process.env.NUXT_KARBON_API_HOST,
       apiToken: process.env.NUXT_KARBON_API_TOKEN,
       clientId: process.env.NUXT_KARBON_CLIENT_ID,
       searchKey: process.env.NUXT_KARBON_SEARCH_KEY,
