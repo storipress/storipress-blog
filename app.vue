@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 const { $paywall } = useNuxtApp()
-const site = useSite()
 
 useHead({
-  titleTemplate: (title) => (title ? `${title} | ${site.publicationName}` : site.publicationName),
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} | Storipress Blog` : 'Storipress Blog'
+  },
 })
 
 onMounted(() => {
