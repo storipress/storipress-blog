@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+useHead({
+  title: 'All desks',
+})
 const { desks } = useDesks()
 </script>
 

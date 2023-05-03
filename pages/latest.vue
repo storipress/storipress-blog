@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+useHead({
+  title: 'Latest articles',
+})
 const { preload, loadMore: loadMoreArticle } = useArticleLoader({
   preload: 16,
   chunk: 16,

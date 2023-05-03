@@ -5,6 +5,9 @@ import { createArticleRoute, createDeskRoute, createAuthorRoute, createTagRoute 
 export default defineNuxtConfig({
   app: {
     head: {
+      titleTemplate(titleChunk) {
+        return titleChunk ? `${titleChunk} | Storipress Blog` : 'Storipress Blog'
+      },
       link: [
         {
           rel: 'icon',

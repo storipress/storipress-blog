@@ -1,5 +1,11 @@
 <script lang="ts" setup>
 const author = setupAuthorPage()
+
+useHead(() => {
+  return {
+    title: `All articles by ${author.value.full_name}`,
+  }
+})
 </script>
 
 <template>

@@ -4,6 +4,13 @@ type Article = ReturnType<typeof setupArticlePage>['value']
 const article = setupPage({
   type: 'article',
 })
+
+useHead(() => {
+  return {
+    title: article.value.title,
+  }
+})
+
 const recommendArticles: Ref<Article[]> = useRecommendArticle(article.value, { count: 4 })
 const { articles: lastArticles } = useFillArticles(4)
 </script>
