@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
   vite: {
     optimizeDeps: {
-      include: ['yup', 'p-retry', 'lodash'],
+      include: ['yup', 'p-retry', 'lodash', 'node-html-parser'],
     },
   },
   modules: [
