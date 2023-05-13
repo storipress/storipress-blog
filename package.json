@@ -10,19 +10,19 @@
   },
   "devDependencies": {
     "@nuxt/image-edge": "1.0.0-28008586.381b906",
-    "@nuxtjs/html-validator": "^1.2.4",
+    "@nuxtjs/html-validator": "^1.2.5",
     "@types/nprogress": "^0.2.0",
-    "nuxt": "^3.3.2",
-    "nuxt-icon": "^0.3.3",
+    "nuxt": "^3.4.3",
+    "nuxt-icon": "^0.4.0",
     "nuxt-lodash": "^2.4.1"
   },
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@3.5.1",
   "dependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
-    "@nuxtjs/tailwindcss": "^6.6.5",
-    "@storipress/karbon": "^0.1.10",
+    "@nuxtjs/tailwindcss": "^6.6.8",
+    "@storipress/karbon": "^0.1.11",
     "@tailwindcss/typography": "^0.5.9",
-    "@vueuse/nuxt": "^9.13.0",
+    "@vueuse/nuxt": "^10.1.2",
     "nprogress": "^0.2.0"
   }
 }
