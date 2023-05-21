@@ -12,14 +12,14 @@
     "@nuxt/image-edge": "1.0.0-28008586.381b906",
     "@nuxtjs/html-validator": "^1.2.5",
     "@types/nprogress": "^0.2.0",
-    "nuxt": "^3.4.3",
-    "nuxt-icon": "^0.4.0",
+    "nuxt": "^3.5.0",
+    "nuxt-icon": "^0.4.1",
     "nuxt-lodash": "^2.4.1"
   },
   "packageManager": "yarn@3.5.1",
   "dependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
-    "@nuxtjs/tailwindcss": "^6.6.8",
+    "@nuxtjs/tailwindcss": "^6.7.0",
     "@storipress/karbon": "^0.1.14",
     "@tailwindcss/typography": "^0.5.9",
     "@vueuse/nuxt": "^10.1.2",
