@@ -74,4 +74,8 @@ export default defineNuxtConfig({
       logo: './assets/logomark.svg',
     },
   },
+
+  colorMode: {
+    preference: 'light',
+  },
 })
