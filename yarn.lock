@@ -5649,9 +5649,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"instantsearch.js@npm:4.56.0":
-  version: 4.56.0
-  resolution: "instantsearch.js@npm:4.56.0"
+"instantsearch.js@npm:4.56.1":
+  version: 4.56.1
+  resolution: "instantsearch.js@npm:4.56.1"
   dependencies:
     "@algolia/events": ^4.0.1
     "@algolia/ui-components-highlight-vdom": ^1.2.1
@@ -5668,7 +5668,7 @@ __metadata:
     search-insights: ^2.6.0
   peerDependencies:
     algoliasearch: ">= 3.1 < 6"
-  checksum: e328bdc976685ef1c9792c94f5e7b79aa40575f06c000cfd96d9b332d0fe9a78b642d8b14cc01ea5c030c46c962da264ff32eab2ca1be7722c47731c19d2b66c
+  checksum: 38c40daed2e1ccb85983d2f25fb68ec429ea48e7a8eb17a995abe36d2211cb2754fff652fb0398e1bd71f01693f78a054f6873a3b8b513151eb4aa01aff05466
   languageName: node
   linkType: hard
 
@@ -10334,8 +10334,8 @@ __metadata:
   linkType: hard
 
 "unplugin-auto-import@npm:^0.16.2":
-  version: 0.16.2
-  resolution: "unplugin-auto-import@npm:0.16.2"
+  version: 0.16.4
+  resolution: "unplugin-auto-import@npm:0.16.4"
   dependencies:
     "@antfu/utils": ^0.7.2
     "@rollup/pluginutils": ^5.0.2
@@ -10352,7 +10352,7 @@ __metadata:
       optional: true
     "@vueuse/core":
       optional: true
-  checksum: 3c40cc448ddbf77b3591e14ccafc319ede871b45d3519e328eb14969ed8f690d2822f9764660f0d3f2596361d1496bd2a225e26609d43083ea448c75099f67e5
+  checksum: 1a40aae5027f38ad39e4cd8f8710ebba7e23009704cbb7424c1e4553d3291feeae313d5094793d5a036f49fe44f1ccddf89ab66e6861e4e67f22d54499c84b36
   languageName: node
   linkType: hard
 
@@ -10806,10 +10806,10 @@ __metadata:
   linkType: hard
 
 "vue-instantsearch@npm:^4.10.0":
-  version: 4.10.0
-  resolution: "vue-instantsearch@npm:4.10.0"
+  version: 4.10.1
+  resolution: "vue-instantsearch@npm:4.10.1"
   dependencies:
-    instantsearch.js: 4.56.0
+    instantsearch.js: 4.56.1
     mitt: ^2.1.0
   peerDependencies:
     "@vue/server-renderer": ^3.1.2
@@ -10821,7 +10821,7 @@ __metadata:
       optional: true
     vue-server-renderer:
       optional: true
-  checksum: 7112d16f4a662780a909ab7bee40ef5cae55ba360d4d23abf2a4d24b35f327935b81ae2d8345fec5d3ff53f4abd64a95c5586e752aadd72df8850503b539ff85
+  checksum: 84746e45d96f49d655a60f27df11956e362926db22bbdd4628ccd3907aab297867ee9482ff6e60cbcc3cb975063810309c70927b35c196a24603899bd262b968
   languageName: node
   linkType: hard
 
