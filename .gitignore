@@ -21,3 +21,4 @@ dist
 .pnp.*
 
 .storipress
+.wrangler
