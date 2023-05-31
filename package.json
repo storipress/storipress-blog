@@ -24,6 +24,7 @@
     "@storipress/karbon": "^0.1.18",
     "@tailwindcss/typography": "^0.5.9",
     "@vueuse/nuxt": "^10.1.2",
-    "nprogress": "^0.2.0"
+    "nprogress": "^0.2.0",
+    "toucan-js": "^3.1.0"
   }
 }

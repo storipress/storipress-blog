@@ -1,0 +1,4 @@
+name = "storipress-blog-test"
+
+[vars]
+SENTRY_DSN = "https://339aed1201cb4ad6b3348e31006603a9@o930441.ingest.sentry.io/4505279822888960"
