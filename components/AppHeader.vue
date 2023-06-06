@@ -1,10 +1,22 @@
 <script lang="ts" setup>
+import logoLight from '~/assets/logo-light.svg'
+import logoDark from '~/assets/logo-dark.svg'
+
 const site = useSite()
 const { $paywall } = useNuxtApp()
 
 const isSearchDialogOpened = ref(false)
 watch(isSearchDialogOpened, (val) => {
   val ? document.body.classList.add('overflow-hidden') : document.body.classList.remove('overflow-hidden')
+})
+
+const colorMode = useColorMode()
+
+const logo = computed(() => {
+  if (colorMode.value === 'dark') {
+    return logoDark
+  }
+  return logoLight
 })
 
 const isLoggedIn = computed(() => $paywall?.authInfo.value)
@@ -16,23 +28,21 @@ const isLoggedIn = computed(() => $paywall?.authInfo.value)
       class="grid gap-x-4 items-center grid-cols-[auto_2fr_auto] w-full m-auto px-5 max-w-[1400px] md:grid-cols-[1fr_2fr_1fr] lg:px-8"
     >
       <div class="uppercase flex gap-x-2 order-2 items-center ml-auto md:order-1 md:ml-0">
-        <template v-if="false">
-          <!-- light/dark mode toggle button -->
-          <div
-            v-if="$colorMode.value === 'light'"
-            role="button"
-            class="flex items-center gap-1"
-            @click="$colorMode.preference = 'dark'"
-          >
-            <Icon name="material-symbols:dark-mode" />
-            <span class="leading-4 tracking-[.044rem] font-medium text-xs hidden lg:block hover:underline">Dark</span>
-          </div>
+        <!-- light/dark mode toggle button -->
+        <div
+          v-if="$colorMode.value === 'light'"
+          role="button"
+          class="flex items-center gap-1"
+          @click="$colorMode.preference = 'dark'"
+        >
+          <Icon name="material-symbols:dark-mode" />
+          <span class="leading-4 tracking-[.044rem] font-medium text-xs hidden lg:block hover:underline">Dark</span>
+        </div>
 
-          <div v-else role="button" class="flex items-center gap-1" @click="$colorMode.preference = 'light'">
-            <Icon name="material-symbols:light-mode-outline" />
-            <span class="leading-4 tracking-[.044rem] font-medium text-xs hidden lg:block hover:underline">Light</span>
-          </div>
-        </template>
+        <div v-else role="button" class="flex items-center gap-1" @click="$colorMode.preference = 'light'">
+          <Icon name="material-symbols:light-mode-outline" />
+          <span class="leading-4 tracking-[.044rem] font-medium text-xs hidden lg:block hover:underline">Light</span>
+        </div>
 
         <!-- search button -->
         <div role="button" class="flex items-center gap-1" @click="isSearchDialogOpened = true">
@@ -44,7 +54,7 @@ const isLoggedIn = computed(() => $paywall?.authInfo.value)
       <!-- site logo -->
       <div class="grow order-1 md:order-2">
         <NuxtLink to="/" class="link-hover mx-auto block w-fit">
-          <nuxt-img :alt="site.publicationName" class="max-h-12 max-w-full w-full h-auto" :src="site.logo?.url" />
+          <nuxt-img :alt="site.publicationName" class="max-h-12 max-w-full h-12 w-full" :src="logo" />
         </NuxtLink>
       </div>
 
@@ -58,9 +68,7 @@ const isLoggedIn = computed(() => $paywall?.authInfo.value)
 </template>
 
 <style lang="scss" scoped>
-.dark-mode {
-  header {
-    @apply border-white;
-  }
+header {
+  @apply dark:border-white;
 }
 </style>

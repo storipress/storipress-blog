@@ -29,14 +29,10 @@ const { desks } = useDesks()
 <style lang="scss" scoped>
 .link-hover {
   @apply hover:after:absolute hover:after:block hover:after:w-full hover:after:h-1.5 hover:after:bg-sky-800 hover:after:mix-blend-multiply hover:after:top-[0.7rem];
+  @apply dark:hover:after:bg-orange-300 dark:hover:after:mix-blend-lighten;
 }
 
-.dark-mode {
-  .nav {
-    @apply border-b-[.5px] border-white;
-  }
-  .link-hover {
-    @apply hover:after:bg-orange-300 hover:after:mix-blend-lighten;
-  }
+.nav {
+  @apply dark:border-b-[.5px] dark:border-white;
 }
 </style>

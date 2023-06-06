@@ -69,11 +69,6 @@ const { preload, createLoadMore } = useArticleLoader({
 <style lang="scss" scoped>
 .more-hover {
   @apply hover:after:absolute hover:after:block hover:after:w-full hover:after:h-1.5 hover:after:bg-sky-800 hover:after:mix-blend-multiply hover:after:top-[1.1rem];
-}
-
-.dark-mode {
-  .more-hover {
-    @apply hover:after:bg-orange-300 hover:after:mix-blend-lighten;
-  }
+  @apply dark:hover:after:bg-orange-300 dark:hover:after:mix-blend-lighten;
 }
 </style>
