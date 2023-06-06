@@ -14,8 +14,7 @@
     "@types/nprogress": "^0.2.0",
     "nuxt": "^3.5.3",
     "nuxt-icon": "^0.4.1",
-    "nuxt-lodash": "^2.4.1",
-    "wrangler": "^3.0.1"
+    "nuxt-lodash": "^2.4.1"
   },
   "packageManager": "yarn@3.5.1",
   "dependencies": {
