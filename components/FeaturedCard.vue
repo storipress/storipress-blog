@@ -23,8 +23,8 @@ const { _resolveFromMetaSync } = useResourceResolver()
     <NuxtLink :to="article.url" class="block relative" :class="classHeroPhoto">
       <ArticleHeroPhoto
         v-if="article.cover?.url"
-        width="405"
-        height="270"
+        width="652"
+        height="391"
         :src="article.cover.url"
         :alt="article.cover?.alt"
         class="object-cover w-full transition duration-200 ease-in rounded-3xl aspect-[5/3]"
